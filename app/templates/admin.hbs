@@ -3,6 +3,7 @@
   {{#each model as |post|}}
     <li>
       {{post.title}}
+      <button type="button" {{action 'delete' post}}>Delete</button>
     </li>
   {{/each}}
 </ul>
