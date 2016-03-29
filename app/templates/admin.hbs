@@ -4,6 +4,7 @@
     <li>
       {{post.title}}
       <button type="button" {{action 'delete' post}}>Delete</button>
+      {{edit-post post=post edit="edit"}}
     </li>
   {{/each}}
 </ul>

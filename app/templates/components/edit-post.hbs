@@ -1,0 +1,39 @@
+{{yield}}
+
+{{#if editPostForm}}
+<form>
+  <div class="form-group">
+    <label for="img">Image
+    {{input placeholder=post.img value=img id="img"}}
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="title">Title
+    {{input placeholder=post.title value=title id="title"}}
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="author">Author
+    {{input placeholder=post.author value=author id="author"}}
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="content">Content
+    {{textarea placeholder=post.content value=content id="content"}}
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="date">Date
+    {{input placeholder=post.date value=date id="date"}}
+    </label>
+  </div>
+
+  <button {{action 'edit' post}}>Save</button>
+</form>
+{{else}}
+  <button {{action 'editFormShow'}}>Edit Post</button>
+{{/if}}
