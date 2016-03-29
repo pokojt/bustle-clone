@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
+
+ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+header {
+
+}
